@@ -1,0 +1,91 @@
+	svg {
+	  font: 10px sans-serif;
+	}
+	body {
+		font-family: sans-serif;
+	}
+	.line {
+	  fill: none;
+	  stroke: #000;
+	  stroke-width: 1.5px;
+	}
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+
+	h3 {
+		padding: 10px;
+		margin: 0;
+	}
+
+	.container {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#rightBox {
+		width: 280px;
+		height: 200px;
+		float: right;
+		display: inline-block;
+	}
+
+	#leftBox {
+		width: 600px;
+		float: left;
+		display: inline-block;
+	}
+
+	#alerts {
+		outline: 2px #BBB solid;
+		height: 200px;
+		width: 900px;
+		display: inline-block;
+	}
+
+	#log {
+		padding: 0 10px;
+    	font-size: 12px;
+    	overflow: scroll;
+    	height: 158px;
+	}
+
+	#info {
+		height: 150px;
+		font-size: 12px;
+	}
+
+	#info span{
+		font-weight: bold;
+	}
+
+	#info .realTimeInfo span{
+		float: right;
+	}
+
+	#log .alert.start{
+		color: red;
+	}
+	#log .alert.end{
+		color: green;
+	}
+	
+	button {
+	  background: #bbb;
+	  padding: 5px 10px 5px 10px;
+	  border: solid black 2px;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	button:hover {
+	  background: #ffffff;
+	  text-decoration: none;
+	}
+	button:focus {
+		outline:0;
+	}

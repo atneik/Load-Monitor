@@ -1,0 +1,40 @@
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Load Monitor</h2>
+    	<div id="leftBox">
+    		<div id="viz"></div>
+    	</div>
+	    <div id="rightBox">
+	    	<div id="info">
+	    		Running 
+	    		<span class="os-type"></span> on 
+	    		<span class="cpu-model"></span> with 
+	 			<span class="cpu-num"></span> virtual cores
+	    		
+	 			<div class="realTimeInfo">
+	 				<br/>
+		    		Last update: <span class="time"></span> <br/>
+		    		Average load: <span class="value"></span> <br/>
+	    			Clients connected: <span class="clientCount"></span> <br/>
+	    			Current Tasks: <span class="currentLoad"></span>
+    			</div>
+    		</div>
+	    	<button id="addButton">Add a Task</button>
+	    	<button id="killButton">Kill all Tasks</button>
+	    </div>
+	   	<div id="alerts">
+			<h3>Alerts</h3>
+		   	<div id="log"></div>
+	   	</div>
+    </div>
+  </body>
+  	    <script src="js/alert.js"></script>
+    <script src="js/viz.js"></script>
+    <script src="js/main.js"></script>
+</html>
